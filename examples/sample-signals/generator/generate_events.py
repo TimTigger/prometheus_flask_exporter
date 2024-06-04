@@ -14,7 +14,7 @@ def run():
             requests.get(HOST + target, timeout=1)
         except requests.RequestException:
             print("cannot connect", HOST)
-            time.sleep(1)
+            time.sleep(0.01)
 
 
 if __name__ == "__main__":
